@@ -33,12 +33,16 @@ vite.config.js 파일 위치에서
 base: "/microfun", // 추가 깃허브 페이지
 
 ```java
-// https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [react()],
-	base: "/microfun/",
+	base: "https://www.pmong.co.kr/",
 });
 ```
+
+base /microfun/
+이것에서 도메인 연결을 했기 때문에..
+base: "https://www.pmong.co.kr/",
+이렇게 변경 시켜줌..
 
 5. npm run build
 6. package.json 파일 내에
