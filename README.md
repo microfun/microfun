@@ -30,7 +30,9 @@ git push -u origin main
 4. npm i gh-pages -D
 
 vite.config.js 파일 위치에서
-base: "/microfun", // 추가 깃허브 페이지
+base: "/microfun", // 추가 깃허브 페이지 ===> 아래 내용 추가됨.
+
+base 부분을 없애니깐 https 정상 동작함.
 
 ```java
 // https://vitejs.dev/config/
@@ -67,3 +69,15 @@ git push
 - vite.config.js 에서
   base: "/microfun/" 을 입력 하면.
   https://microfun.github.io/microfun/index.html <-- 주소 입력시 접속이 가능함.
+
+- 테스트 끝에.. base 부분 /microfun/ 이부분을 제거 하니깐 정상 동작이 되었습니다.
+
+```java
+// https://vitejs.dev/config/
+export default defineConfig({
+	plugins: [react()],
+});
+```
+
+홈페이지 수정후 deploy를 하면
+gh-pages -d dist가 실행 되면서 깃허브 페이지가 수정됩니다.
