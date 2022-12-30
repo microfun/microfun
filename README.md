@@ -33,16 +33,12 @@ vite.config.js 파일 위치에서
 base: "/microfun", // 추가 깃허브 페이지
 
 ```java
+// https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [react()],
-	base: "https://www.pmong.co.kr/",
+	base: "/microfun/",
 });
 ```
-
-base /microfun/
-이것에서 도메인 연결을 했기 때문에..
-base: "https://www.pmong.co.kr/",
-이렇게 변경 시켜줌..
 
 5. npm run build
 6. package.json 파일 내에
@@ -62,3 +58,12 @@ base: "https://www.pmong.co.kr/",
 git add .
 git commit -m "deploy"
 git push
+
+### server responded with a status of 404 () 에러 발생
+
+- 위와 같이 작업을 하면 깃허브 페이지를 연결하는것은 문제가 없었다.
+- 그러나 도메인을 연결하고 https 를 사용하려다 보니깐~~ 위와 같이 404 에러가 발생
+
+- vite.config.js 에서
+  base: "/microfun/" 을 입력 하면.
+  https://microfun.github.io/microfun/index.html <-- 주소 입력시 접속이 가능함.
