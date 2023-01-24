@@ -2,7 +2,11 @@
 마이크로펀 깃허브 페이지입니다.  
 이곳에 있는 모든 내용은 지금 하고 있는것을 제외한 **모두 공부 및 취미로** 하는 내용 들입니다.
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter)](https://github.com/microfun)
+<div align=center>
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmicrofun&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://github.com/microfun)
+
+</div>
 
 ## My Stack
 
